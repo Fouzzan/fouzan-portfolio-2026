@@ -95,27 +95,7 @@
     color:  var(--color-primary);
     text-shadow: 0 8px 16px var(--color-primary);
   }
-/*=============== CUSTOM CURSOR ===============*/
 
-
-/* Hide the custom cursor */
-
-
-/*=============== HEADER & NAV ===============*/
-
-
-/* Active link */
-
-
-/*=============== HOME ===============*/
-
-
-
-
-/*=============== BUTTON ===============*/
-
-
-/*=============== ABOUT ===============*/
 
 
 /*=============== PROJECTS ===============*/
@@ -152,7 +132,7 @@
 }
 
 
-/*=============== WORK ===============*/
+
 
 
 /* Show & hide sections */
@@ -169,44 +149,3 @@
   color: var(--color-primary);
 }
 
-/* Active tab */
-
-
-/*=============== SERVICES ===============*/
-
-
-/* Hide services info */
-
-
-/* Rotate icon */
-
-
-/*=============== TESTIMONIALS ===============*/
-
-
-/* Infinite scroll animation */
-
-
-/*=============== CONTACT ===============*/
-
-
-/*=============== FOOTER ===============*/
-
-
-/*=============== SCROLL BAR ===============*/
-
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-
-
-/* For medium devices */
-
-
-/* For large devices */
-
-
-/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
-
-
-/* Custom cursor is hidden for mobile devices */
