@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+  <title>portfolio</title>
+</head>
+
+<body class="bg-body text-text overflow-x-hidden">
+
+
+
+  <!-- Header -->
+  <Header class="w-full relative  top-0 left-0w-full z-50 bg-[linear-gradient(180deg,var(--color-body)_60%,transparent_100%)]">
+    <div class="absolute w-24 h-24 blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob"></div>
+
+    <!-- Nav Bar -->
+
+    <nav
+      class="fixed rounded-xl shadow-md md:backdrop-blur-3xl inset-x-0  top-0 z-100  px-8 py-6 flex justify-between lg:items-center lg:justify-between">
+      <div class=" font-second font-bold text-title text-xl hover:text-primary text-shadow-lg">
+        <a href="#fouzan">Fouzan</a>
+      </div>
+
+
+      <div id="nav-menu" class="flex justify-center">
+        <ul
+          class="  justify-items-center  flex flex-col items-start gap-1  md:gap-12 *:gap-10 md:flex-row
+           *:flex  *:lg:flex-row *:lg:gap-2 *:justify-center *:hover:text-primary *:hover:text-shadow-lg *:hover:shadow-primary mx-auto font-second
+           *:text-left text-title">
+
+
+
+          <!-- <li class="hidden items-center text-lg">
+            <a href="#home"><i class="uil uil-estate text-xl"></i>
+            Home
+            </a>
+
+            
+          </li> -->
+
+
+          <li class="glow items-center text-md ">
+            <a href="#about">
+              <i class="uil uil-user text-lg"></i>
+            About
+            </a>
+            
+          </li>
+
+
+          <!-- <li class="items-center text-lg">
+            <a href="#skills">
+              <i class="uil uil-brain text-xl"></i>
+              Skills
+            </a>
+            
+          </li> -->
+
+        
+
+          <li class="glow items-center text-md">
+            <a href="#projects">
+              <i class="uil uil-file-alt text-lg"></i>
+            Projects
+            </a>
+            
+          </li>
+            <li class="glow items-center text-md">
+            <a href="#experience"><i class="uil uil-book-alt text-lg"></i>
+            Experience
+            </a>
+            
+            </li>
+
+          <li class="glow items-center text-md">
+            <a href="#contact">
+              <i class="uil uil-phone text-lg"></i>
+              Contact Me
+            </a>
+            
+          </li>
+
+        </ul>
+
+        <!-- <i id="nav-close" class="lg:hidden uil uil-multiply text-3xl absolute right-5 bottom-3 text-primary z-20"></i> -->
+
+
+
+
+
+      </div>
+      <!-- <div id="nav-toggle" class=" hidden">
+        <button class="bg-primary hover:bg-primary-alt rounded-xl p-4" onclick="toggleMenu()" href="#toggle">
+          <i class="uil uil-apps"></i>
+        </button>
+      </div> -->
+
+
+    </nav>
+
+
+  </Header>
+
+
+  
+   <!--==================== MAIN ====================-->
+      <main class="main">
+         <!-- CUSTOM CURSOR -->
+         
+         <!--==================== Hero ====================-->
+         <section id="home">
+
+          <div id="home_shadow"   class="w-full top-50 h-[375px] md:h-[700px] bottom-80 md:bottom-10 lg:-bottom-10 absolute
+           bg-[linear-gradient(180deg,hsla(240,100%,2%,0)_60%,hsl(240,100%,2%)_85%)] z-10">
+
+          </div>
+          
+
+          <div id="home_container_grid" class="relative pt-16 gap-y-12">
+
+            <div id="home_data" class="absolute lg:left-30 lg:top-45">
+              <h3>Hello, I'm</h3>
+              <h1>Fouzan <br> Muhammed</h1>
+            </div>
+
+            <div id="home_image" class="mx-auto relative grid overflow-y-clip">
+              <div class="absolute justify-self-center w-24 h-24 md:w-100 md:h-80 blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob mx-auto top-45 lg:top-100 -z-50"></div>
+              <img src="./src/assets/home_img/withoutbg.png" alt="image" class=" mx-auto w-60 pt-50 lg:pt-40 md:w-100 lg:w-115">
+
+            </div>
+
+            <div id="home_info" class="absolute z-20 justify-self-center align-center -bottom-8 md:-bottom-3 lg:top-50 lg:right-30">
+              <h3>Python</h3>
+              <h2 class="text-primary text-5xl relative after:content-[''] after:absolute after:inset-0
+              after:bg-[linear-gradient(0deg,black_10%,transparent_60%)]">Full Stack</h2>
+              <h2 class="-translate-y-4 text-5xl">Developer</h2>
+            </div>
+
+            <div id="home_social" class="absolute z-20 left-5 top-100 justify-self-center flex flex-col gap-y-3 text-3xl text-title
+             *:hover:text-primary *:hover:translate-x-1">
+              <a href="https://www.linkedin.com/in/fouzan-mhd/" target="_blank">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+
+              <a href="https://github.com/Fouzzan" target="_blank">
+                <i class="ri-github-fill"></i>
+              </a>
+
+              <a href="mailto:fouzanmuhammedkv@gmail.com" target="_blank">
+                <i class="ri-mail-fill"></i>
+              </a>
+
+              
+
+            </div>
+
+            <a href="./src/assets/CV/FOUZAN MUHAMMED K V.pdf" download target="_blank" id="home_cv" class="hidden md:block absolute font-body right-25  bottom-30 z-30 text-2xl">
+              RESUME <i class="ri-id-card-fill"></i>
+            </a>
+
+          </div>
+
+
+            
+            
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="relative pt-30" id="about">
+
+          <div id="about_shadow"  class="w-full h-[375px] md:h-[600px] bottom-0   absolute bg-[linear-gradient(180deg,hsla(240,100%,2%,0)_60%,hsl(240,100%,2%)_85%)] z-10"></div>
+
+          <div id="about_container" class="overflow-y-clip gap-y-12 grid grid-cols-[450px] lg:grid-cols-[repeat(2,_500px)] lg:gap-22 lg:pt-8 justify-center">
+            <div id="about_data" class=" text-left mb-6 grid justify-center md:mt-16 lg:py-15">
+              <h2 id="about_title" class="text-title font-second font-bold text-4xl mb-6 text-center p-4 lg:text-left lg:z-20">
+                <span class="text-primary font-second ">Developement</span>
+                <br>
+                IS My Passion
+              </h2>
+
+              <p class=" text-text font-body text-xl mb-8 text-center lg:text-left lg:z-20 lg:mb-12">
+                I'm a web <b>Python Full Stack Developer</b> passionate 
+                about experimenting with new <b>skills and creativity.</b> 
+                Driven by learning and curiosity, I'm always looking to 
+                explore and learn new development skills.
+              </p>
+
+              <a href="./src/assets/CV/FOUZAN MUHAMMED K V.pdf" download target="_blank" class="inline-flex z-100 bg-body border-[3px]
+               border-primary font-second text-title px-8 rounded-4xl font-semibold gap-x-2 py-2 justify-self-center items-center">
+                Resume <i class="ri-profile-fill"></i>
+              </a>
+            </div>
+
+            <div id="about_image" class="relative justify-self-center lg:-order-1 lg:py-15">
+              <div class="absolute w-50 h-50 blur-[50px] bg-gradient-to-b from-primary-alt to-primary-light animate-blob top-0 left-0 -z-10"></div>
+              <div class="hidden md:block absolute w-40 h-40 blur-[50px] bg-gradient-to-b from-primary-alt to-primary-light animate-blob right-0 bottom-30 -z-10"></div>
+              <img src="./src/assets/About/1000605388.png" alt="image" class="w-80">
+            </div>
+            
+
+          </div>
+
+
+            
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+
+          <div id="project_section_title" class="mt-6 mb-2 mx-auto">
+            <h2 class=" text-center lg:text-5xl">
+              I Make Incredible<br>
+              <span class="text-primary text-5xl">Projects</span>
+            </h2>
+          </div>
+
+          <div id="projects_container" class="pb-16 max-w-[400px] lg:max-w-[1400px] mx-auto">
+            <!-- card1 -->
+            <div id="projects_swiper" class="swiper projects_swiper lg:pt-16 ">
+              <div class="swiper-wrapper *:lg:p-10 *:lg:mx-6">
+                <article id="project_card1" class="relative bg-container p-6 lg:p-10 rounded-4xl overflow-hidden swiper-slide px-4 w-[350px]">
+                  <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+                   animate-blob"></div>
+
+                  <div id="project_number" class="relative z-10 flex justify-between align-center">
+                    <h1 class="text-biggest">01</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div id="project_data" class="relative z-10 m-8">
+                    <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+                    Clone Website</h1>
+                    <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
+                    <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                  </div>
+
+                  <div id="project_image" class="project_image relative z-10">
+                    <img src="./src/assets/./Projects/MakeMyTrip.png" alt="" class="rounded-4xl">
+                    <a href="https://github.com/Fouzzan/make-my-trip-clone.git" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+                      <i class="ri-arrow-right-up-long-line my-auto"></i>
+                    </a>
+
+                  </div>
+
+                </article>
+
+                <!-- card2 -->
+                <article id="project_card2" class="relative bg-container p-6  rounded-4xl overflow-hidden swiper-slide px-4 w-[350px] lg:w-[440px]">
+                  <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+                   animate-blob"></div>
+
+                  <div id="project_number" class="relative z-10 flex justify-between align-center">
+                    <h1 class="text-biggest">02</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div id="project_data" class="relative z-10 m-8">
+                    <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+                    Clone Website</h1>
+                    <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
+                    <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                  </div>
+
+                  <div id="project_image" class="project_image relative z-10">
+                    <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
+                    <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+                      <i class="ri-arrow-right-up-long-line my-auto"></i>
+                    </a>
+
+                  </div>
+
+                </article>
+
+                <!-- card-3 -->
+                <article id="project_card3" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
+                  <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+                   animate-blob"></div>
+
+                  <div id="project_number" class="relative z-10 flex justify-between align-center">
+                    <h1 class="text-biggest">03</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div id="project_data" class="relative z-10 m-8">
+                    <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+                    Clone Website</h1>
+                    <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
+                    <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                  </div>
+
+                  <div id="project_image" class="project_image relative z-10">
+                    <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
+                    <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+                      <i class="ri-arrow-right-up-long-line my-auto"></i>
+                    </a>
+
+                  </div>
+
+                </article>
+
+                <!-- card-4 -->
+                <article id="project_card4" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
+                  <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+                   animate-blob"></div>
+
+                  <div id="project_number" class="relative z-10 flex justify-between align-center">
+                    <h1 class="text-biggest">04</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div id="project_data" class="relative z-10 m-8">
+                    <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+                    Clone Website</h1>
+                    <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
+                    <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                  </div>
+
+                  <div id="project_image" class="project_image relative z-10">
+                    <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
+                    <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+                      <i class="ri-arrow-right-up-long-line my-auto"></i>
+                    </a>
+
+                  </div>
+
+                </article>
+
+                <!-- card-5 -->
+                <article id="project_card5" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
+                  <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+                   animate-blob"></div>
+
+                  <div id="project_number" class="relative z-10 flex justify-between align-center">
+                    <h1 class="text-biggest">05</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div id="project_data" class="relative z-10 m-8">
+                    <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+                    Clone Website</h1>
+                    <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
+                    <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                  </div>
+
+                  <div id="project_image" class="project_image relative z-10">
+                    <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
+                    <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+                      <i class="ri-arrow-right-up-long-line my-auto"></i>
+                    </a>
+
+                  </div>
+
+                </article>
+
+                <!-- card-6 -->
+                <article id="project_card6" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
+                  <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+                   animate-blob"></div>
+
+                  <div id="project_number" class="relative z-10 flex justify-between align-center">
+                    <h1 class="text-biggest">06</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div id="project_data" class="relative z-10 m-8">
+                    <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+                    Clone Website</h1>
+                    <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
+                    <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                  </div>
+
+                  <div id="project_image" class="project_image relative z-10">
+                    <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
+                    <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+                      <i class="ri-arrow-right-up-long-line my-auto"></i>
+                    </a>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+          
+
+            </div>
+
+          </div>
+            
+         </section>
+
+         <!--==================== WORK ====================-->
+         <section id="experience" class="work section pb-16">
+            <h2 class="section_title text-center">
+              <span class="text-primary">My Experience</span>
+              <br>& Education
+            </h2>
+
+            <div class="work_container grid w-[460px] md:w-[700px] lg:w-[1300px] gap-x-12 lg:gap-x-40 justify-self-center">
+              
+              <div class="work_tabs flex justify-between py-6 px-16 lg:px-60 md:px-30 bg-container rounded-4xl font-second text-xl">
+
+                <button id="experience_button" class="work_button work_active hover:text-primary" data-target="#experience-content">
+                  Experience <i class="ri-briefcase-4-line"></i>
+                </button>
+
+                <button id="education_button" class="work_button hover:text-primary" data-target="#education">
+                  Education <i class="ri-graduation-cap-line"></i>
+                </button>
+              </div>
+              
+              <div class="work_area relative px-12">
+                <div class="work_line absolute left-6  w-1 h-full bg-gradient-to-b from-transparent to-primary-alt-2
+                  after:content-[''] after:absolute after:h-4 after:w-4 after:bg-primary-alt-2 after:rounded-full after:-bottom-1 after:-left-1.5
+                  md:mx-auto md:left-25 md:right-0 lg:left-0"> </div>
+                <!-- content experience -->
+                <div class="work_content work_active grid gap-y-8" data-content id="experience-content">
+                  <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
+                    <div class="work_data flex justify-between">
+                      <div>
+                        <h1 class="work_title mb-2 text-4xl">Python Developer <br>Betterinu</h1>
+                        <h3 class="work_subtitle font-second text-2xl">Betterinu</h3>
+                      </div>
+                      
+                      <h2 class="work_year">2026</h2>
+                    </div>
+
+                    <p class="work_description">
+                      Python Developer intern handling technologies such as FAST API, databases
+                      , CMS, assisting with web optimization.
+                    </p>
+                  </div>
+
+                  <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
+                    <div class="work_data flex justify-between">
+                      <div>
+                        <h1 class="work_title mb-2 text-4xl">Python Developer <br>Betterinu</h1>
+                        <h3 class="work_subtitle font-second text-2xl">Betterinu</h3>
+                      </div>
+                      
+                      <h2 class="work_year">2026</h2>
+                    </div>
+
+                    <p class="work_description">
+                      Python Developer intern handling technologies such as FAST API, databases
+                      , CMS, assisting with web optimization.
+                    </p>
+                  </div>
+                
+
+                 <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
+                    <div class="work_data flex justify-between">
+                      <div>
+                        <h1 class="work_title mb-2 text-4xl">Python Developer <br>Betterinu</h1>
+                        <h3 class="work_subtitle font-second text-2xl">Betterinu</h3>
+                      </div>
+                      
+                      <h2 class="work_year">Now</h2>
+                    </div>
+
+                    <p class="work_description">
+                      Python Developer intern handling technologies such as FAST API, databases
+                      , CMS, assisting with web optimization.
+                    </p>
+                  </div>
+                </div>
+                <!-- content Education -->
+                <div class="work_content grid gap-y-8" data-content id="education">
+                   <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
+                    <div class="work_data flex justify-between">
+                      <div>
+                        <h1 class="work_title mb-2 text-4xl">Highschool <br> Education</h1>
+                        <h3 class="work_subtitle font-second text-2xl">PTMYHSS EDAPPALAM</h3>
+                      </div>
+                      
+                      <h2 class="work_year ml-6 md:ml-12">2021</h2>
+                    </div>
+
+                    <p class="work_description">
+                      High School student, learning the basics of programming, 
+                      web development, and other topics, graduating with honors.
+                    </p>
+                  </div>
+
+                  <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
+                    <div class="work_data flex justify-between">
+                      <div>
+                        <h1 class="work_title mb-2 text-4xl">Higher Secondary <br> Education</h1>
+                        <h3 class="work_subtitle text-2xl">PTMYHSS EDAPPALAM</h3>
+                      </div>
+                      
+                      <h2 class="work_year md:ml-10">2023</h2>
+                    </div>
+
+                    <p class="work_description">
+                      Higher Secondary student, learning the basics of programming, 
+                      web development, and other topics.
+                    </p>
+                  </div>
+
+                  <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
+                    <div class="work_data flex justify-between">
+                      <div>
+                        <h1 class="work_title mb-2 text-4xl">Bachelor of <br> Computer Application</h1>
+                        <h3 class="work_subtitle text-2xl">Al Jamia Arts and Science Collage</h3>
+                      </div>
+                      
+                      <h2 class="work_year md:ml-6">2026</h2>
+                    </div>
+
+                    <p class="work_description">
+                      College student, learning the basics of programming, 
+                      web development, and other topics.
+                    </p>
+                  </div>
+                </div>
+
+
+              </div>
+
+              
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+           
+         </section>
+
+         <!--==================== TESTIMONIALS ====================-->
+         <section class="testimonials section">
+
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section text-title lg:mb-20" id="contact">
+
+          
+             <div class="contact_data text-center grid gap-y-4 pb-8  lg:mt-20 lg:mb-30">
+              <h2 class="section_title">Contact Me</h2>
+              <p class="font-second font-medium">Tell me about your next project</p>
+
+              <button class="contact_button inline-flex z-100 bg-body border-[3px]
+               border-primary font-second text-title px-8 rounded-4xl font-semibold gap-x-2 py-2 justify-self-center items-center cursor-pointer" id="contact_button">
+                Copy E-mail <i class="ri-file-copy-line"></i>
+                <span class="contact_email hidden" id="contact_email">fouzanmuhammedkv@gmail.com</span>
+              </button>
+            </div>
+            <div class="contact_content_grid grid gap-y-12 pb-8 lg:gap-y-32 lg:grid-cols-[repeat(3,1fr)] lg:px-12">
+            
+              <div class="contact_info grid gap-y-4  lg:justify-items-start">
+                <div>
+                  <h3 class="contact_title text-center"> E-mail</h3>
+                  <address class="contact_address font-medium font-body text-center lg:text-xl">fouzanmuhammedkv@gmail.com</address>
+                </div>
+                <div class="text-center lg:pl-20">
+                  <h3 class="contact_title text-center ">Location</h3>
+                  <address class="contact_address font-medium font-body lg:text-xl">Perinthalmanna</address>
+                </div>
+              </div>
+
+              <div class="contact_social">
+                <h3 class="contact_title text-center">Social Media</h3>
+
+                <div class="contact_links grid grid-cols-[max-content] justify-center gap-y-1 *:hover:translate-x-2 *:hover:text-text lg:text-xl">
+                  <a href="" target="_blank" class="contact_link font-medium flex justify-between items-center gap-y-2">
+                    linkedin<i class="ri-arrow-right-up-long-line text-xl"></i>
+                  </a>
+
+                  <a href="" target="_blank" class="contact_link font-medium flex justify-between items-center gap-y-2">
+                    GitHub<i class="ri-arrow-right-up-long-line text-xl"></i>
+                  </a>
+
+                  <a href="" target="_blank" class="contact_link font-medium flex justify-between items-center gap-y-2">
+                    Gmail<i class="ri-arrow-right-up-long-line text-xl"></i>
+                  </a>
+
+                  
+                </div>
+              </div>
+
+              <div class="contact_write lg:justify-self-end lg:mr-20">
+                <h3 class="contact_title text-center">Write Me</h3>
+
+                <div class="contact_links grid grid-cols-[max-content] justify-center gap-y-1 *:hover:translate-x-2 *:hover:text-text lg:text-xl">
+                  <a href="" target="_blank" class="contact_link font-medium flex justify-between items-center gap-y-2 ">
+                    Whatsapp<i class="ri-arrow-right-up-long-line txt-xl"></i>
+                  </a>
+                  <a href="" target="_blank" class="contact_link font-medium flex justify-between items-center gap-y-2">
+                    Instagram<i class="ri-arrow-right-up-long-line text-xl"></i>
+                  </a>
+                  
+                </div>
+              </div>
+
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer grid relative pt-16 pb-4 text-center gap-y-4 overflow-hidden">
+
+        <div class=" absolute w-30 h-30 right-40 -bottom-3 blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob"></div>
+
+        <div class="footer_copy text-title font-body">
+          All Rights Reserved By <span class="text-primary">Fouzan</span>
+        </div>
+        <div class="footer_year">
+          &#169; <span id="footer-year" class="font-second">2026</span>
+        </div>
+         
+      </footer>
+      
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== ANIME JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+
+  <!-- <h1 id="h1" class="text-title text-3xl font-bold underline font-body">
+    Portfolio Website
+    <i class="uil uil-adobe-alt"></i>
+    <i class="uil uil-android"></i>
+  </h1> -->
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

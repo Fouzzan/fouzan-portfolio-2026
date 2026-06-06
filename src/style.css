@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Montserrat", sans-serif;
+    --font-second: "Unbounded", sans-serif;
+
+    --color-primary: hsl(255 60% 64%);
+    --color-primary-alt: hsl(255 80% 56%);
+    --color-primary-alt-2: hsl(255 60% 56%);
+    --color-primary-light: hsl(255 60% 74%);
+
+    --color-title: hsl(240 8% 95%);
+    --color-text: hsl(240 8% 70%);
+
+    --color-body: hsl(240 40% 8%);
+    --color-container: hsl(240 24% 12%)
+
+
+
+    --text-biggest: 2rem;
+  --text-bigger: 1.75rem;
+  --text-h1: 1.5rem;
+  --text-h2: 1.25rem;
+  --text-h3: 1rem;
+  /* --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem; */
+
+    --animate-blob: blob 8s linear infinite;
+}
+
+/* ul:first-child:hover {
+  text-shadow: 0 8px 16px var(--color-primary);
+} */
+
+
+
+/* round things */
+
+/* .blob {
+    @apply absolute w-24 h-24 rounded-full blur-3xl -z-10;
+
+    background: linear-gradient(
+        180deg,
+        #3868f8,
+        #818cf8
+    );
+
+    animation: blob-spin 5s linear infinite;
+} */
+
+@keyframes blob {
+    0% {
+        border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 50% 60%;
+    }
+
+    100% {
+        border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+        transform: rotate(360deg);
+    }
+}
+
+
+@layer base {
+  h3 {
+    @apply text-primary font-second  text-3xl;
+  }
+  h1{
+    @apply text-title font-second font-bold text-5xl;
+
+  }
+  h2{
+    @apply text-title font-second font-bold text-4xl;
+  }
+  b {
+    @apply text-primary font-semibold;
+  }
+  p {
+    @apply text-text font-body text-xl;
+  }
+}
+.glow:hover{
+  color:  var(--color-primary);
+    text-shadow: 0 8px 16px var(--color-primary);
+}
+
+             /* Active LInk */
+  .active-link {
+    color:  var(--color-primary);
+    text-shadow: 0 8px 16px var(--color-primary);
+  }
+/*=============== CUSTOM CURSOR ===============*/
+
+
+/* Hide the custom cursor */
+
+
+/*=============== HEADER & NAV ===============*/
+
+
+/* Active link */
+
+
+/*=============== HOME ===============*/
+
+
+
+
+/*=============== BUTTON ===============*/
+
+
+/*=============== ABOUT ===============*/
+
+
+/*=============== PROJECTS ===============*/
+
+.project_button {
+  opacity: 0;
+}
+
+
+.project_image:hover .project_button {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+
+
+
+/* Swiper class */
+
+.projects_swiper{
+  margin-inline: initial;
+  padding-bottom: 2rem;
+
+}
+
+.projects_swiper .swiper-slide {
+  width: min(100%, 420px);
+}
+
+.projects .swiper-pagination-bullet{
+  bottom: 0;
+  background-color: var(--color-primary);
+  transition: opacity .4s;
+}
+
+
+/*=============== WORK ===============*/
+
+
+/* Show & hide sections */
+
+.work_area [data-content]
+{
+  display: none;
+}
+.work_active[data-content]
+{
+  display: grid;
+}
+.work_button.work_active{
+  color: var(--color-primary);
+}
+
+/* Active tab */
+
+
+/*=============== SERVICES ===============*/
+
+
+/* Hide services info */
+
+
+/* Rotate icon */
+
+
+/*=============== TESTIMONIALS ===============*/
+
+
+/* Infinite scroll animation */
+
+
+/*=============== CONTACT ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
+
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+
+
+/* Custom cursor is hidden for mobile devices */
