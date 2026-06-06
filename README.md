@@ -63,7 +63,7 @@ npm run dev
 
 ## Live Demo
 
-Coming Soon
+(https://fouzan-portfolio2026.web.app/)
 
 ## Author
 
