@@ -114,6 +114,8 @@
    <!--==================== MAIN ====================-->
       <main class="main">
          <!-- CUSTOM CURSOR -->
+          <div class="cursor fixed top-0 left-0 z-1000 w-[50px] h-[50px] bg-primary rounded-full shadow-primary shadow-[0_0_30px] 
+          pointer-events-none transition-[transform,left,top,width,height] duration-[200ms,200ms,200ms,300ms,300ms] ease-out mix-blend-difference hover:scale-105"></div>
          
          <!--==================== Hero ====================-->
          <section id="home">
@@ -126,7 +128,7 @@
 
           <div id="home_container_grid" class="relative pt-16 gap-y-12">
 
-            <div id="home_data" class="absolute lg:left-30 lg:top-45">
+            <div id="home_data" class="absolute left-4 lg:left-30 lg:top-45">
               <h3>Hello, I'm</h3>
               <h1>Fouzan <br> Muhammed</h1>
             </div>
@@ -178,7 +180,7 @@
 
           <div id="about_shadow"  class="w-full h-[375px] md:h-[600px] bottom-0   absolute bg-[linear-gradient(180deg,hsla(240,100%,2%,0)_60%,hsl(240,100%,2%)_85%)] z-10"></div>
 
-          <div id="about_container" class="overflow-y-clip gap-y-12 grid grid-cols-[450px] lg:grid-cols-[repeat(2,_500px)] lg:gap-22 lg:pt-8 justify-center">
+          <div id="about_container" class="overflow-y-clip gap-y-12 grid grid-cols-1 max-w-[450px] mx-auto lg:grid-cols-[repeat(2,_500px)] lg:gap-22 lg:pt-8 justify-center">
             <div id="about_data" class=" text-left mb-6 grid justify-center md:mt-16 lg:py-15">
               <h2 id="about_title" class="text-title font-second font-bold text-4xl mb-6 text-center p-4 lg:text-left lg:z-20">
                 <span class="text-primary font-second ">Developement</span>
@@ -186,7 +188,7 @@
                 IS My Passion
               </h2>
 
-              <p class=" text-text font-body text-xl mb-8 text-center lg:text-left lg:z-20 lg:mb-12">
+              <p class=" text-text font-body text-xl mb-8 text-center lg:text-left lg:z-20 lg:mb-12 ">
                 I'm a web <b>Python Full Stack Developer</b> passionate 
                 about experimenting with new <b>skills and creativity.</b> 
                 Driven by learning and curiosity, I'm always looking to 
@@ -202,7 +204,7 @@
             <div id="about_image" class="relative justify-self-center lg:-order-1 lg:py-15">
               <div class="absolute w-50 h-50 blur-[50px] bg-gradient-to-b from-primary-alt to-primary-light animate-blob top-0 left-0 -z-10"></div>
               <div class="hidden md:block absolute w-40 h-40 blur-[50px] bg-gradient-to-b from-primary-alt to-primary-light animate-blob right-0 bottom-30 -z-10"></div>
-              <img src="./src/assets/About/1000605388.png" alt="image" class="w-80">
+              <img src="./src/assets/About/1000605388.png" alt="image" class=" w-80">
             </div>
             
 

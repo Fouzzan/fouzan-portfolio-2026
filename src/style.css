@@ -132,7 +132,10 @@
 }
 
 
-
+.hide-cursor{
+  width: 0;
+  height: 0;
+}
 
 
 /* Show & hide sections */
