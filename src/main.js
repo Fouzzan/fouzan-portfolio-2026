@@ -97,6 +97,31 @@ if (footerYear) {
   footerYear.textContent = new Date().getFullYear().toString()
 }
 
+/*=============== SCROLL REVEAL ANIMATIONS ===============*/
+const revealElements = document.querySelectorAll('.scroll-reveal')
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+if (revealElements.length) {
+  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+    revealElements.forEach((element) => element.classList.add('is-visible'))
+  } else {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle('is-visible', entry.isIntersecting)
+        })
+      },
+      {
+        root: null,
+        rootMargin: '0px 0px -12% 0px',
+        threshold: 0.18,
+      },
+    )
+
+    revealElements.forEach((element) => revealObserver.observe(element))
+  }
+}
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 

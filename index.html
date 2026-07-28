@@ -25,7 +25,7 @@
     <!-- Nav Bar -->
 
     <nav
-      class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-5 shadow-md sm:flex-row sm:items-center sm:justify-between sm:px-6 md:fixed md:inset-x-0 md:top-0 md:z-100 md:rounded-xl md:backdrop-blur-3xl lg:px-8">
+      class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-5 shadow-md motion-safe:animate-slide-in-down sm:flex-row sm:items-center sm:justify-between sm:px-6 md:fixed md:inset-x-0 md:top-0 md:z-100 md:rounded-xl md:backdrop-blur-3xl lg:px-8">
       <div class="font-second text-xl font-bold text-title text-shadow-lg hover:text-primary">
         <a href="#home">Fouzan</a>
       </div>
@@ -129,7 +129,7 @@
 
       <div id="home_container_grid" class="relative mx-auto grid min-h-[620px] max-w-7xl pt-14 sm:min-h-[680px] md:min-h-[760px] md:pt-16 lg:min-h-[720px]">
 
-        <div id="home_data" class="absolute left-0 top-4 z-20 sm:left-4 md:top-12 lg:left-8 lg:top-28">
+        <div id="home_data" class="scroll-reveal reveal-left absolute left-0 top-4 z-20 sm:left-4 md:top-12 lg:left-8 lg:top-28" style="--reveal-delay: 120ms">
           <h3 class="text-xl sm:text-2xl md:text-3xl">Hello, I'm</h3>
           <h1 class="text-4xl sm:text-5xl md:text-6xl">Fouzan <br> Muhammed</h1>
         </div>
@@ -139,20 +139,22 @@
             class="absolute top-48 -z-50 mx-auto h-32 w-32 justify-self-center blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob sm:top-56 md:h-80 md:w-100 lg:top-96">
           </div>
           <img src="./src/assets/home_img/withoutbg.png" alt="image"
-            class="mx-auto w-64 max-w-full pt-56 sm:w-80 sm:pt-64 md:w-100 md:pt-52 lg:w-115 lg:pt-32">
+            class="scroll-reveal reveal-image mx-auto w-64 max-w-full pt-56 sm:w-80 sm:pt-64 md:w-100 md:pt-52 lg:w-115 lg:pt-32" style="--reveal-delay: 260ms">
 
         </div>
 
         <div id="home_info"
           class="absolute bottom-10 left-1/2 z-20 w-full max-w-xs -translate-x-1/2 text-center sm:bottom-12 md:max-w-md lg:bottom-auto lg:left-auto lg:right-8 lg:top-36 lg:w-auto lg:translate-x-0 lg:text-left">
-          <h3 class="text-xl sm:text-2xl md:text-3xl">Python</h3>
-          <h2 class="relative text-4xl text-primary sm:text-5xl after:content-[''] after:absolute after:inset-0
+          <div class="scroll-reveal reveal-right" style="--reveal-delay: 420ms">
+            <h3 class="text-xl sm:text-2xl md:text-3xl">Python</h3>
+            <h2 class="relative text-4xl text-primary sm:text-5xl after:content-[''] after:absolute after:inset-0
               after:bg-[linear-gradient(0deg,black_10%,transparent_60%)]">Full Stack</h2>
-          <h2 class="-translate-y-3 text-4xl sm:text-5xl">Developer</h2>
+            <h2 class="-translate-y-3 text-4xl sm:text-5xl">Developer</h2>
+          </div>
         </div>
 
-        <div id="home_social" class="absolute left-0 top-72 z-20 flex flex-col gap-y-3 justify-self-center text-2xl text-title sm:left-4 sm:top-80 md:top-96 md:text-3xl
-             *:hover:text-primary *:hover:translate-x-1">
+        <div id="home_social" class="scroll-reveal reveal-left absolute left-0 top-72 z-20 flex flex-col gap-y-3 justify-self-center text-2xl text-title sm:left-4 sm:top-80 md:top-96 md:text-3xl
+             *:hover:text-primary *:hover:translate-x-1" style="--reveal-delay: 560ms">
           <a href="https://www.linkedin.com/in/fouzan-mhd/" target="_blank">
             <i class="ri-linkedin-fill"></i>
           </a>
@@ -170,7 +172,7 @@
         </div>
 
         <a href="./src/assets/CV/FOUZAN MUHAMMED K V.pdf" download target="_blank" id="home_cv"
-          class="absolute bottom-20 right-8 z-30 hidden font-body text-xl md:block lg:bottom-28 lg:text-2xl">
+          class="scroll-reveal reveal-up absolute bottom-20 right-8 z-30 hidden font-body text-xl md:block lg:bottom-28 lg:text-2xl" style="--reveal-delay: 620ms">
           RESUME <i class="ri-id-card-fill"></i>
         </a>
 
@@ -190,7 +192,7 @@
 
       <div id="about_container"
         class="mx-auto grid max-w-6xl grid-cols-1 justify-center gap-y-10 overflow-y-clip md:max-w-3xl lg:grid-cols-2 lg:items-center lg:gap-16 lg:pt-8">
-        <div id="about_data" class="z-20 mb-6 grid justify-center text-left md:mt-10 lg:py-15">
+        <div id="about_data" class="scroll-reveal reveal-up z-20 mb-6 grid justify-center text-left md:mt-10 lg:py-15" style="--reveal-delay: 80ms">
           <h2 id="about_title"
             class="mb-6 p-2 text-center font-second text-3xl font-bold text-title sm:text-4xl lg:z-20 lg:text-left lg:text-5xl">
             <span class="text-primary font-second ">Development</span>
@@ -212,7 +214,7 @@
           </a>
         </div>
 
-        <div id="about_image" class="relative justify-self-center lg:-order-1 lg:py-15">
+        <div id="about_image" class="scroll-reveal reveal-left relative justify-self-center lg:-order-1 lg:py-15" style="--reveal-delay: 160ms">
           <div
             class="absolute w-50 h-50 blur-[50px] bg-gradient-to-b from-primary-alt to-primary-light animate-blob top-0 left-0 -z-10">
           </div>
@@ -232,14 +234,14 @@
     <!--==================== PROJECTS ====================-->
     <section class="projects section px-4 py-16 sm:px-6 lg:px-8" id="projects">
 
-      <div id="project_section_title" class="mx-auto mb-6 mt-2">
+      <div id="project_section_title" class="scroll-reveal reveal-up mx-auto mb-6 mt-2">
         <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl">
           I Make Incredible<br>
           <span class="text-4xl text-primary sm:text-5xl">Projects</span>
         </h2>
       </div>
 
-      <div id="projects_container" class="mx-auto max-w-sm pb-16 sm:max-w-md lg:max-w-[1400px]">
+      <div id="projects_container" class="scroll-reveal reveal-up mx-auto max-w-sm pb-16 sm:max-w-md lg:max-w-[1400px]" style="--reveal-delay: 120ms">
         <!-- card1 -->
         <div id="projects_swiper" class="swiper projects_swiper lg:pt-16 ">
           <div class="swiper-wrapper *:mx-0 *:lg:mx-6 *:lg:p-10">
@@ -428,7 +430,7 @@
 
     <!--==================== WORK ====================-->
     <section id="experience" class="work section px-4 pb-16 pt-8 sm:px-6 lg:px-8">
-      <h2 class="section_title text-center text-3xl sm:text-4xl lg:text-5xl">
+      <h2 class="scroll-reveal reveal-up section_title text-center text-3xl sm:text-4xl lg:text-5xl">
         <span class="text-primary">My Experience</span>
         <br>& Education
       </h2>
@@ -436,7 +438,7 @@
       <div class="work_container mx-auto grid w-full max-w-6xl gap-x-12 lg:gap-x-40">
 
         <div
-          class="work_tabs mt-8 flex flex-wrap justify-center gap-4 rounded-4xl bg-container px-4 py-5 font-second text-sm sm:justify-between sm:px-8 sm:text-base md:px-16 lg:px-48 lg:text-xl">
+          class="scroll-reveal reveal-up work_tabs mt-8 flex flex-wrap justify-center gap-4 rounded-4xl bg-container px-4 py-5 font-second text-sm sm:justify-between sm:px-8 sm:text-base md:px-16 lg:px-48 lg:text-xl" style="--reveal-delay: 100ms">
 
           <button id="experience_button" class="work_button work_active hover:text-primary"
             data-target="#experience-content">
@@ -448,7 +450,7 @@
           </button>
         </div>
 
-        <div class="work_area relative mt-10 px-6 sm:px-10 lg:px-12">
+        <div class="scroll-reveal reveal-up work_area relative mt-10 px-6 sm:px-10 lg:px-12" style="--reveal-delay: 180ms">
           <div class="work_line absolute left-1 w-1 h-full bg-gradient-to-b from-transparent to-primary-alt-2
                   after:content-[''] after:absolute after:h-4 after:w-4 after:bg-primary-alt-2 after:rounded-full after:-bottom-1 after:-left-1.5
                   sm:left-4 lg:left-0"> </div>
@@ -569,7 +571,7 @@
     <section class="contact section px-4 text-title sm:px-6 lg:mb-20 lg:px-8" id="contact">
 
 
-      <div class="contact_data grid gap-y-4 pb-8 text-center lg:mb-24 lg:mt-20">
+      <div class="scroll-reveal reveal-up contact_data grid gap-y-4 pb-8 text-center lg:mb-24 lg:mt-20">
         <h2 class="section_title text-3xl sm:text-4xl lg:text-5xl">Contact Me</h2>
         <p class="font-second text-base font-medium sm:text-lg">Tell me about your next project</p>
 
@@ -581,7 +583,7 @@
           <span class="contact_email hidden" id="contact_email">fouzanmuhammedkv@gmail.com</span>
         </button>
       </div>
-      <div class="contact_content_grid mx-auto grid max-w-6xl gap-y-12 pb-8 md:grid-cols-3 md:gap-x-8 lg:gap-y-32 lg:px-12">
+      <div class="scroll-reveal reveal-up contact_content_grid mx-auto grid max-w-6xl gap-y-12 pb-8 md:grid-cols-3 md:gap-x-8 lg:gap-y-32 lg:px-12" style="--reveal-delay: 140ms">
 
         <div class="contact_info grid gap-y-4 lg:justify-items-start">
           <div>
