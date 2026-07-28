@@ -18,23 +18,22 @@
 
 
   <!-- Header -->
-  <Header
-    class="w-full relative  top-0 left-0w-full z-50 bg-[linear-gradient(180deg,var(--color-body)_60%,transparent_100%)]">
+  <header
+    class="relative top-0 left-0 z-50 w-full bg-[linear-gradient(180deg,var(--color-body)_60%,transparent_100%)]">
     <div class="absolute w-24 h-24 blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob"></div>
 
     <!-- Nav Bar -->
 
     <nav
-      class="md:fixed rounded-xl shadow-md md:backdrop-blur-3xl inset-x-0  top-0 z-100  px-8 py-6 flex justify-between lg:items-center lg:justify-between">
-      <div class=" font-second font-bold text-title text-xl hover:text-primary text-shadow-lg">
-        <a href="#fouzan">Fouzan</a>
+      class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-5 shadow-md sm:flex-row sm:items-center sm:justify-between sm:px-6 md:fixed md:inset-x-0 md:top-0 md:z-100 md:rounded-xl md:backdrop-blur-3xl lg:px-8">
+      <div class="font-second text-xl font-bold text-title text-shadow-lg hover:text-primary">
+        <a href="#home">Fouzan</a>
       </div>
 
 
-      <div id="nav-menu" class="flex justify-center">
-        <ul class="  justify-items-center  flex flex-col items-start gap-1  md:gap-12 *:gap-10 md:flex-row
-           *:flex  *:lg:flex-row *:lg:gap-2 *:justify-center *:hover:text-primary *:hover:text-shadow-lg *:hover:shadow-primary mx-auto font-second
-           *:text-left text-title">
+      <div id="nav-menu" class="flex justify-center sm:justify-end">
+        <ul class="mx-auto flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-second text-xs text-title sm:gap-x-6 sm:text-sm md:gap-x-10 lg:text-base
+           *:flex *:items-center *:gap-1 *:text-left *:hover:text-primary *:hover:text-shadow-lg *:hover:shadow-primary">
 
 
 
@@ -107,7 +106,7 @@
     </nav>
 
 
-  </Header>
+  </header>
 
 
 
@@ -120,39 +119,39 @@
     </div>
 
     <!--==================== Hero ====================-->
-    <section id="home">
+    <section id="home" class="relative overflow-hidden px-4 pt-4 sm:px-6 md:pt-24 lg:px-8">
 
-      <div id="home_shadow" class="w-full top-100 h-[375px] md:h-[700px] md:top-50 md:bottom-10 lg:-bottom-10 absolute
+      <div id="home_shadow" class="absolute inset-x-0 bottom-0 h-[320px] md:h-[620px]
            bg-[linear-gradient(180deg,hsla(240,100%,2%,0)_60%,hsl(240,100%,2%)_85%)] z-10">
 
       </div>
 
 
-      <div id="home_container_grid" class="relative pt-16 gap-y-12">
+      <div id="home_container_grid" class="relative mx-auto grid min-h-[620px] max-w-7xl pt-14 sm:min-h-[680px] md:min-h-[760px] md:pt-16 lg:min-h-[720px]">
 
-        <div id="home_data" class="absolute left-4 lg:left-30 lg:top-45">
-          <h3>Hello, I'm</h3>
-          <h1>Fouzan <br> Muhammed</h1>
+        <div id="home_data" class="absolute left-0 top-4 z-20 sm:left-4 md:top-12 lg:left-8 lg:top-28">
+          <h3 class="text-xl sm:text-2xl md:text-3xl">Hello, I'm</h3>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl">Fouzan <br> Muhammed</h1>
         </div>
 
-        <div id="home_image" class="mx-auto relative grid overflow-y-clip">
+        <div id="home_image" class="relative mx-auto grid w-full overflow-y-clip">
           <div
-            class="absolute justify-self-center w-24 h-24 md:w-100 md:h-80 blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob mx-auto top-45 lg:top-100 -z-50">
+            class="absolute top-48 -z-50 mx-auto h-32 w-32 justify-self-center blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob sm:top-56 md:h-80 md:w-100 lg:top-96">
           </div>
           <img src="./src/assets/home_img/withoutbg.png" alt="image"
-            class=" mx-auto w-60 pt-50 lg:pt-40 md:w-100 lg:w-115">
+            class="mx-auto w-64 max-w-full pt-56 sm:w-80 sm:pt-64 md:w-100 md:pt-52 lg:w-115 lg:pt-32">
 
         </div>
 
         <div id="home_info"
-          class="absolute z-20 justify-self-center align-center -bottom-8 md:-bottom-3 lg:top-50 lg:right-30">
-          <h3>Python</h3>
-          <h2 class="text-primary text-5xl relative after:content-[''] after:absolute after:inset-0
+          class="absolute bottom-10 left-1/2 z-20 w-full max-w-xs -translate-x-1/2 text-center sm:bottom-12 md:max-w-md lg:bottom-auto lg:left-auto lg:right-8 lg:top-36 lg:w-auto lg:translate-x-0 lg:text-left">
+          <h3 class="text-xl sm:text-2xl md:text-3xl">Python</h3>
+          <h2 class="relative text-4xl text-primary sm:text-5xl after:content-[''] after:absolute after:inset-0
               after:bg-[linear-gradient(0deg,black_10%,transparent_60%)]">Full Stack</h2>
-          <h2 class="-translate-y-4 text-5xl">Developer</h2>
+          <h2 class="-translate-y-3 text-4xl sm:text-5xl">Developer</h2>
         </div>
 
-        <div id="home_social" class="absolute z-20 left-5 top-60 md:top-100 justify-self-center flex flex-col gap-y-3 text-3xl text-title
+        <div id="home_social" class="absolute left-0 top-72 z-20 flex flex-col gap-y-3 justify-self-center text-2xl text-title sm:left-4 sm:top-80 md:top-96 md:text-3xl
              *:hover:text-primary *:hover:translate-x-1">
           <a href="https://www.linkedin.com/in/fouzan-mhd/" target="_blank">
             <i class="ri-linkedin-fill"></i>
@@ -171,7 +170,7 @@
         </div>
 
         <a href="./src/assets/CV/FOUZAN MUHAMMED K V.pdf" download target="_blank" id="home_cv"
-          class="hidden md:block absolute font-body right-25  bottom-30 z-30 text-2xl">
+          class="absolute bottom-20 right-8 z-30 hidden font-body text-xl md:block lg:bottom-28 lg:text-2xl">
           RESUME <i class="ri-id-card-fill"></i>
         </a>
 
@@ -183,23 +182,23 @@
     </section>
 
     <!--==================== ABOUT ====================-->
-    <section class="relative pt-30" id="about">
+    <section class="relative overflow-hidden px-4 pt-20 sm:px-6 md:pt-28 lg:px-8" id="about">
 
       <div id="about_shadow"
         class="w-full h-[375px] md:h-[600px] bottom-0   absolute bg-[linear-gradient(180deg,hsla(240,100%,2%,0)_60%,hsl(240,100%,2%)_85%)] z-10">
       </div>
 
       <div id="about_container"
-        class="overflow-y-clip gap-y-12 grid grid-cols-1 max-w-[450px] mx-auto lg:grid-cols-[repeat(2,_500px)] lg:gap-22 lg:pt-8 justify-center">
-        <div id="about_data" class=" text-left mb-6 grid justify-center md:mt-16 lg:py-15">
+        class="mx-auto grid max-w-6xl grid-cols-1 justify-center gap-y-10 overflow-y-clip md:max-w-3xl lg:grid-cols-2 lg:items-center lg:gap-16 lg:pt-8">
+        <div id="about_data" class="z-20 mb-6 grid justify-center text-left md:mt-10 lg:py-15">
           <h2 id="about_title"
-            class="text-title font-second font-bold text-4xl mb-6 text-center p-4 lg:text-left lg:z-20">
-            <span class="text-primary font-second ">Developement</span>
+            class="mb-6 p-2 text-center font-second text-3xl font-bold text-title sm:text-4xl lg:z-20 lg:text-left lg:text-5xl">
+            <span class="text-primary font-second ">Development</span>
             <br>
             IS My Passion
           </h2>
 
-          <p class=" text-text font-body text-xl mb-8 text-center lg:text-left lg:z-20 lg:mb-12 ">
+          <p class="mb-8 max-w-xl text-center font-body text-base leading-7 text-text sm:text-lg md:text-xl lg:z-20 lg:mb-12 lg:text-left">
             I'm a web <b>Python Full Stack Developer</b> passionate
             about experimenting with new <b>skills and creativity.</b>
             Driven by learning and curiosity, I'm always looking to
@@ -208,7 +207,7 @@
 
           <a href="./src/assets/CV/FOUZAN MUHAMMED K V.pdf" download target="_blank"
             class="inline-flex z-100 bg-body border-[3px]
-               border-primary font-second text-title px-8 rounded-4xl font-semibold gap-x-2 py-2 justify-self-center items-center">
+               border-primary font-second text-title px-7 rounded-4xl font-semibold gap-x-2 py-2 justify-self-center items-center sm:px-8">
             <span class="hover:text-primary">Resume <i class="ri-profile-fill"></i></span>
           </a>
         </div>
@@ -220,7 +219,7 @@
           <div
             class="hidden md:block absolute w-40 h-40 blur-[50px] bg-gradient-to-b from-primary-alt to-primary-light animate-blob right-0 bottom-30 -z-10">
           </div>
-          <img src="./src/assets/About/1000605388.png" alt="image" class=" w-80">
+          <img src="./src/assets/About/1000605388.png" alt="image" class="w-64 max-w-full sm:w-80">
         </div>
 
 
@@ -231,39 +230,39 @@
     </section>
 
     <!--==================== PROJECTS ====================-->
-    <section class="projects section" id="projects">
+    <section class="projects section px-4 py-16 sm:px-6 lg:px-8" id="projects">
 
-      <div id="project_section_title" class="mt-6 mb-2 mx-auto">
-        <h2 class=" text-center lg:text-5xl">
+      <div id="project_section_title" class="mx-auto mb-6 mt-2">
+        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl">
           I Make Incredible<br>
-          <span class="text-primary text-5xl">Projects</span>
+          <span class="text-4xl text-primary sm:text-5xl">Projects</span>
         </h2>
       </div>
 
-      <div id="projects_container" class="pb-16 max-w-[400px] lg:max-w-[1400px] mx-auto">
+      <div id="projects_container" class="mx-auto max-w-sm pb-16 sm:max-w-md lg:max-w-[1400px]">
         <!-- card1 -->
         <div id="projects_swiper" class="swiper projects_swiper lg:pt-16 ">
-          <div class="swiper-wrapper *:lg:p-10 *:lg:mx-6">
+          <div class="swiper-wrapper *:mx-0 *:lg:mx-6 *:lg:p-10">
             <article id="project_card1"
-              class="relative bg-container p-6 lg:p-10 rounded-4xl overflow-hidden swiper-slide px-4 w-[350px]">
-              <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+              class="relative w-full overflow-hidden rounded-4xl bg-container p-5 sm:p-6 lg:p-10 swiper-slide">
+              <div class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
                    animate-blob"></div>
 
-              <div id="project_number" class="relative z-10 flex justify-between align-center">
+              <div class="relative z-10 flex items-center justify-between">
                 <h1 class="text-biggest">01</h1>
                 <h3>Web</h3>
               </div>
 
-              <div id="project_data" class="relative z-10 m-8">
-                <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+              <div class="relative z-10 my-6 sm:m-8">
+                <h1 class="mb-4 text-left text-2xl sm:text-3xl lg:text-4xl">Make My Trip <br>
                   Clone Website</h1>
-                <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
-                <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                <p class="mb-2 font-second text-sm sm:text-base"> Technologies Used</p>
+                <p class="font-body text-base sm:text-xl">HTML, CSS, Tailwind</p>
               </div>
 
-              <div id="project_image" class="project_image relative z-10">
-                <img src="./src/assets/./Projects/MakeMyTrip.png" alt="" class="rounded-4xl">
-                <a href="https://github.com/Fouzzan/make-my-trip-clone.git" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
+              <div class="project_image relative z-10">
+                <img src="./src/assets/./Projects/MakeMyTrip.png" alt="Make My Trip clone preview" class="w-full rounded-4xl">
+                <a href="https://github.com/Fouzzan/make-my-trip-clone.git" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
                      bg-body border-[3px] border-primary text-text top-3 right-3 ">
                   <i class="ri-arrow-right-up-long-line my-auto"></i>
                 </a>
@@ -274,140 +273,140 @@
 
             <!-- card2 -->
             <article id="project_card2"
-              class="relative bg-container p-6  rounded-4xl overflow-hidden swiper-slide px-4 w-[350px] lg:w-[440px]">
-              <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+              class="relative w-full overflow-hidden rounded-4xl bg-container p-5 sm:p-6 swiper-slide lg:w-[440px]">
+              <div class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
                    animate-blob"></div>
 
-              <div id="project_number" class="relative z-10 flex justify-between align-center">
+              <div class="relative z-10 flex items-center justify-between">
                 <h1 class="text-biggest">02</h1>
                 <h3>Web</h3>
               </div>
 
-              <div id="project_data" class="relative z-10 m-8">
-                <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+              <div class="relative z-10 my-6 sm:m-8">
+                <h1 class="mb-4 text-left text-2xl sm:text-3xl lg:text-4xl">Portfolio UI <br>
                   Clone Website</h1>
-                <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
-                <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                <p class="mb-2 font-second text-sm sm:text-base"> Technologies Used</p>
+                <p class="font-body text-base sm:text-xl">HTML, CSS, Tailwind</p>
               </div>
 
-              <div id="project_image" class="project_image relative z-10">
-                <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
-                <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
-                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+              <div class="project_image relative z-10">
+                <img src="./src/assets/./Projects/projects-2 (1).png" alt="Project preview" class="w-full rounded-4xl">
+                <span aria-hidden="true" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 cursor-not-allowed opacity-50">
                   <i class="ri-arrow-right-up-long-line my-auto"></i>
-                </a>
+                </span>
 
               </div>
 
             </article>
 
             <!-- card-3 -->
-            <article id="project_card3" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
-              <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+            <article id="project_card3" class="relative w-full overflow-hidden rounded-4xl bg-container p-5 sm:p-6 swiper-slide">
+              <div class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
                    animate-blob"></div>
 
-              <div id="project_number" class="relative z-10 flex justify-between align-center">
+              <div class="relative z-10 flex items-center justify-between">
                 <h1 class="text-biggest">03</h1>
                 <h3>Web</h3>
               </div>
 
-              <div id="project_data" class="relative z-10 m-8">
-                <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+              <div class="relative z-10 my-6 sm:m-8">
+                <h1 class="mb-4 text-left text-2xl sm:text-3xl lg:text-4xl">Responsive <br>
                   Clone Website</h1>
-                <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
-                <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                <p class="mb-2 font-second text-sm sm:text-base"> Technologies Used</p>
+                <p class="font-body text-base sm:text-xl">HTML, CSS, Tailwind</p>
               </div>
 
-              <div id="project_image" class="project_image relative z-10">
-                <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
-                <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
-                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+              <div class="project_image relative z-10">
+                <img src="./src/assets/./Projects/projects-2 (1).png" alt="Project preview" class="w-full rounded-4xl">
+                <span aria-hidden="true" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 cursor-not-allowed opacity-50">
                   <i class="ri-arrow-right-up-long-line my-auto"></i>
-                </a>
+                </span>
 
               </div>
 
             </article>
 
             <!-- card-4 -->
-            <article id="project_card4" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
-              <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+            <article id="project_card4" class="relative w-full overflow-hidden rounded-4xl bg-container p-5 sm:p-6 swiper-slide">
+              <div class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
                    animate-blob"></div>
 
-              <div id="project_number" class="relative z-10 flex justify-between align-center">
+              <div class="relative z-10 flex items-center justify-between">
                 <h1 class="text-biggest">04</h1>
                 <h3>Web</h3>
               </div>
 
-              <div id="project_data" class="relative z-10 m-8">
-                <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+              <div class="relative z-10 my-6 sm:m-8">
+                <h1 class="mb-4 text-left text-2xl sm:text-3xl lg:text-4xl">Frontend <br>
                   Clone Website</h1>
-                <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
-                <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                <p class="mb-2 font-second text-sm sm:text-base"> Technologies Used</p>
+                <p class="font-body text-base sm:text-xl">HTML, CSS, Tailwind</p>
               </div>
 
-              <div id="project_image" class="project_image relative z-10">
-                <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
-                <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
-                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+              <div class="project_image relative z-10">
+                <img src="./src/assets/./Projects/projects-2 (1).png" alt="Project preview" class="w-full rounded-4xl">
+                <span aria-hidden="true" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 cursor-not-allowed opacity-50">
                   <i class="ri-arrow-right-up-long-line my-auto"></i>
-                </a>
+                </span>
 
               </div>
 
             </article>
 
             <!-- card-5 -->
-            <article id="project_card5" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
-              <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+            <article id="project_card5" class="relative w-full overflow-hidden rounded-4xl bg-container p-5 sm:p-6 swiper-slide">
+              <div class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
                    animate-blob"></div>
 
-              <div id="project_number" class="relative z-10 flex justify-between align-center">
+              <div class="relative z-10 flex items-center justify-between">
                 <h1 class="text-biggest">05</h1>
                 <h3>Web</h3>
               </div>
 
-              <div id="project_data" class="relative z-10 m-8">
-                <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+              <div class="relative z-10 my-6 sm:m-8">
+                <h1 class="mb-4 text-left text-2xl sm:text-3xl lg:text-4xl">Tailwind <br>
                   Clone Website</h1>
-                <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
-                <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                <p class="mb-2 font-second text-sm sm:text-base"> Technologies Used</p>
+                <p class="font-body text-base sm:text-xl">HTML, CSS, Tailwind</p>
               </div>
 
-              <div id="project_image" class="project_image relative z-10">
-                <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
-                <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
-                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+              <div class="project_image relative z-10">
+                <img src="./src/assets/./Projects/projects-2 (1).png" alt="Project preview" class="w-full rounded-4xl">
+                <span aria-hidden="true" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 cursor-not-allowed opacity-50">
                   <i class="ri-arrow-right-up-long-line my-auto"></i>
-                </a>
+                </span>
 
               </div>
 
             </article>
 
             <!-- card-6 -->
-            <article id="project_card6" class="relative bg-container p-6 rounded-4xl overflow-hidden swiper-slide">
-              <div id="project_blob" class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
+            <article id="project_card6" class="relative w-full overflow-hidden rounded-4xl bg-container p-5 sm:p-6 swiper-slide">
+              <div class="absolute z-0  w-75 h-75 blur-[50px] bottom-0 -right-31 bg-gradient-to-b from-primary-alt to-primary-light
                    animate-blob"></div>
 
-              <div id="project_number" class="relative z-10 flex justify-between align-center">
+              <div class="relative z-10 flex items-center justify-between">
                 <h1 class="text-biggest">06</h1>
                 <h3>Web</h3>
               </div>
 
-              <div id="project_data" class="relative z-10 m-8">
-                <h1 id="project_title" class="text-left ml-6 text-4xl mb-4">Make My Trip <br>
+              <div class="relative z-10 my-6 sm:m-8">
+                <h1 class="mb-4 text-left text-2xl sm:text-3xl lg:text-4xl">Website <br>
                   Clone Website</h1>
-                <p id="project_subtitle" class="font-second mb-2"> Technologies Used</p>
-                <p id="project_description" class="font-body">HTML, CSS, Tailwind</p>
+                <p class="mb-2 font-second text-sm sm:text-base"> Technologies Used</p>
+                <p class="font-body text-base sm:text-xl">HTML, CSS, Tailwind</p>
               </div>
 
-              <div id="project_image" class="project_image relative z-10">
-                <img src="./src/assets/./Projects/projects-2 (1).png" alt="" class="rounded-4xl">
-                <a href="" id="project_button" target="_blank" class="project_button grid absolute justify-center rounded-full w-12 h-12
-                     bg-body border-[3px] border-primary text-text top-3 right-3 ">
+              <div class="project_image relative z-10">
+                <img src="./src/assets/./Projects/projects-2 (1).png" alt="Project preview" class="w-full rounded-4xl">
+                <span aria-hidden="true" class="project_button grid absolute justify-center rounded-full w-12 h-12
+                     bg-body border-[3px] border-primary text-text top-3 right-3 cursor-not-allowed opacity-50">
                   <i class="ri-arrow-right-up-long-line my-auto"></i>
-                </a>
+                </span>
 
               </div>
 
@@ -428,16 +427,16 @@
     </section>
 
     <!--==================== WORK ====================-->
-    <section id="experience" class="work section pb-16">
-      <h2 class="section_title text-center">
+    <section id="experience" class="work section px-4 pb-16 pt-8 sm:px-6 lg:px-8">
+      <h2 class="section_title text-center text-3xl sm:text-4xl lg:text-5xl">
         <span class="text-primary">My Experience</span>
         <br>& Education
       </h2>
 
-      <div class="work_container grid w-[460px] md:w-[700px] lg:w-[1300px] gap-x-12 lg:gap-x-40 justify-self-center">
+      <div class="work_container mx-auto grid w-full max-w-6xl gap-x-12 lg:gap-x-40">
 
         <div
-          class="work_tabs flex justify-between py-6 px-16 lg:px-60 md:px-30 bg-container rounded-4xl font-second text-xl">
+          class="work_tabs mt-8 flex flex-wrap justify-center gap-4 rounded-4xl bg-container px-4 py-5 font-second text-sm sm:justify-between sm:px-8 sm:text-base md:px-16 lg:px-48 lg:text-xl">
 
           <button id="experience_button" class="work_button work_active hover:text-primary"
             data-target="#experience-content">
@@ -449,56 +448,56 @@
           </button>
         </div>
 
-        <div class="work_area relative px-12">
-          <div class="work_line absolute left-6  w-1 h-full bg-gradient-to-b from-transparent to-primary-alt-2
+        <div class="work_area relative mt-10 px-6 sm:px-10 lg:px-12">
+          <div class="work_line absolute left-1 w-1 h-full bg-gradient-to-b from-transparent to-primary-alt-2
                   after:content-[''] after:absolute after:h-4 after:w-4 after:bg-primary-alt-2 after:rounded-full after:-bottom-1 after:-left-1.5
-                  md:mx-auto md:left-25 md:right-0 lg:left-0"> </div>
+                  sm:left-4 lg:left-0"> </div>
           <!-- content experience -->
           <div class="work_content work_active grid gap-y-8" data-content id="experience-content">
-            <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
-              <div class="work_data flex justify-between">
+            <div class="work_card grid gap-y-4 md:grid-cols-2 md:gap-12 lg:gap-28">
+              <div class="work_data flex flex-wrap justify-between gap-3">
                 <div>
-                  <h1 class="work_title mb-2 text-4xl">Python Developer <br>Betterinu</h1>
-                  <h3 class="work_subtitle font-second text-2xl">Betterinu</h3>
+                  <h1 class="work_title mb-2 text-2xl sm:text-3xl lg:text-4xl">Python Developer <br>Betterinu</h1>
+                  <h3 class="work_subtitle font-second text-lg sm:text-xl lg:text-2xl">Betterinu</h3>
                 </div>
 
-                <h2 class="work_year">2026</h2>
+                <h2 class="work_year text-2xl sm:text-3xl">2026</h2>
               </div>
 
-              <p class="work_description">
+              <p class="work_description text-base leading-7 sm:text-lg md:text-xl">
                 Python Developer intern handling technologies such as FAST API, databases
                 , CMS, assisting with web optimization.
               </p>
             </div>
 
-            <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
-              <div class="work_data flex justify-between">
+            <div class="work_card grid gap-y-4 md:grid-cols-2 md:gap-12 lg:gap-28">
+              <div class="work_data flex flex-wrap justify-between gap-3">
                 <div>
-                  <h1 class="work_title mb-2 text-4xl">Python Developer <br>Betterinu</h1>
-                  <h3 class="work_subtitle font-second text-2xl">Betterinu</h3>
+                  <h1 class="work_title mb-2 text-2xl sm:text-3xl lg:text-4xl">Python Developer <br>Betterinu</h1>
+                  <h3 class="work_subtitle font-second text-lg sm:text-xl lg:text-2xl">Betterinu</h3>
                 </div>
 
-                <h2 class="work_year">2026</h2>
+                <h2 class="work_year text-2xl sm:text-3xl">2026</h2>
               </div>
 
-              <p class="work_description">
+              <p class="work_description text-base leading-7 sm:text-lg md:text-xl">
                 Python Developer intern handling technologies such as FAST API, databases
                 , CMS, assisting with web optimization.
               </p>
             </div>
 
 
-            <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
-              <div class="work_data flex justify-between">
+            <div class="work_card grid gap-y-4 md:grid-cols-2 md:gap-12 lg:gap-28">
+              <div class="work_data flex flex-wrap justify-between gap-3">
                 <div>
-                  <h1 class="work_title mb-2 text-4xl">Python Developer <br>Betterinu</h1>
-                  <h3 class="work_subtitle font-second text-2xl">Betterinu</h3>
+                  <h1 class="work_title mb-2 text-2xl sm:text-3xl lg:text-4xl">Python Developer <br>Betterinu</h1>
+                  <h3 class="work_subtitle font-second text-lg sm:text-xl lg:text-2xl">Betterinu</h3>
                 </div>
 
-                <h2 class="work_year">Now</h2>
+                <h2 class="work_year text-2xl sm:text-3xl">Now</h2>
               </div>
 
-              <p class="work_description">
+              <p class="work_description text-base leading-7 sm:text-lg md:text-xl">
                 Python Developer intern handling technologies such as FAST API, databases
                 , CMS, assisting with web optimization.
               </p>
@@ -506,49 +505,49 @@
           </div>
           <!-- content Education -->
           <div class="work_content grid gap-y-8" data-content id="education">
-            <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
-              <div class="work_data flex justify-between">
+            <div class="work_card grid gap-y-4 md:grid-cols-2 md:gap-12 lg:gap-28">
+              <div class="work_data flex flex-wrap justify-between gap-3">
                 <div>
-                  <h1 class="work_title mb-2 text-4xl">Highschool <br> Education</h1>
-                  <h3 class="work_subtitle font-second text-2xl">PTMYHSS EDAPPALAM</h3>
+                  <h1 class="work_title mb-2 text-2xl sm:text-3xl lg:text-4xl">High School <br> Education</h1>
+                  <h3 class="work_subtitle font-second text-lg sm:text-xl lg:text-2xl">PTMYHSS EDAPPALAM</h3>
                 </div>
 
-                <h2 class="work_year ml-6 md:ml-12">2021</h2>
+                <h2 class="work_year text-2xl sm:text-3xl">2021</h2>
               </div>
 
-              <p class="work_description">
+              <p class="work_description text-base leading-7 sm:text-lg md:text-xl">
                 High School student, learning the basics of programming,
                 web development, and other topics, graduating with honors.
               </p>
             </div>
 
-            <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
-              <div class="work_data flex justify-between">
+            <div class="work_card grid gap-y-4 md:grid-cols-2 md:gap-12 lg:gap-28">
+              <div class="work_data flex flex-wrap justify-between gap-3">
                 <div>
-                  <h1 class="work_title mb-2 text-4xl">Higher Secondary <br> Education</h1>
-                  <h3 class="work_subtitle text-2xl">PTMYHSS EDAPPALAM</h3>
+                  <h1 class="work_title mb-2 text-2xl sm:text-3xl lg:text-4xl">Higher Secondary <br> Education</h1>
+                  <h3 class="work_subtitle text-lg sm:text-xl lg:text-2xl">PTMYHSS EDAPPALAM</h3>
                 </div>
 
-                <h2 class="work_year md:ml-10">2023</h2>
+                <h2 class="work_year text-2xl sm:text-3xl">2023</h2>
               </div>
 
-              <p class="work_description">
+              <p class="work_description text-base leading-7 sm:text-lg md:text-xl">
                 Higher Secondary student, learning the basics of programming,
                 web development, and other topics.
               </p>
             </div>
 
-            <div class="work_card grid gap-y-4 md:grid-cols-[repeat(2,240px)] lg:grid-cols-[repeat(2,450px)] md:gap-60">
-              <div class="work_data flex justify-between">
+            <div class="work_card grid gap-y-4 md:grid-cols-2 md:gap-12 lg:gap-28">
+              <div class="work_data flex flex-wrap justify-between gap-3">
                 <div>
-                  <h1 class="work_title mb-2 text-4xl">Bachelor of <br> Computer Application</h1>
-                  <h3 class="work_subtitle text-2xl">Al Jamia Arts and Science Collage</h3>
+                  <h1 class="work_title mb-2 text-2xl sm:text-3xl lg:text-4xl">Bachelor of <br> Computer Application</h1>
+                  <h3 class="work_subtitle text-lg sm:text-xl lg:text-2xl">Al Jamia Arts and Science College</h3>
                 </div>
 
-                <h2 class="work_year md:ml-6">2026</h2>
+                <h2 class="work_year text-2xl sm:text-3xl">2026</h2>
               </div>
 
-              <p class="work_description">
+              <p class="work_description text-base leading-7 sm:text-lg md:text-xl">
                 College student, learning the basics of programming,
                 web development, and other topics.
               </p>
@@ -567,43 +566,43 @@
 
 
 
-    <section class="contact section text-title lg:mb-20" id="contact">
+    <section class="contact section px-4 text-title sm:px-6 lg:mb-20 lg:px-8" id="contact">
 
 
-      <div class="contact_data text-center grid gap-y-4 pb-8  lg:mt-20 lg:mb-30">
-        <h2 class="section_title">Contact Me</h2>
-        <p class="font-second font-medium">Tell me about your next project</p>
+      <div class="contact_data grid gap-y-4 pb-8 text-center lg:mb-24 lg:mt-20">
+        <h2 class="section_title text-3xl sm:text-4xl lg:text-5xl">Contact Me</h2>
+        <p class="font-second text-base font-medium sm:text-lg">Tell me about your next project</p>
 
         <button
           class="contact_button inline-flex z-100 bg-body border-[3px]
-               border-primary font-second text-title px-8 rounded-4xl font-semibold gap-x-2 py-2 justify-self-center items-center cursor-pointer"
+               border-primary font-second text-title px-6 rounded-4xl font-semibold gap-x-2 py-2 justify-self-center items-center cursor-pointer text-sm sm:px-8 sm:text-base"
           id="contact_button">
           Copy E-mail <i class="ri-file-copy-line"></i>
           <span class="contact_email hidden" id="contact_email">fouzanmuhammedkv@gmail.com</span>
         </button>
       </div>
-      <div class="contact_content_grid grid gap-y-12 pb-8 lg:gap-y-32 lg:grid-cols-[repeat(3,1fr)] lg:px-12">
+      <div class="contact_content_grid mx-auto grid max-w-6xl gap-y-12 pb-8 md:grid-cols-3 md:gap-x-8 lg:gap-y-32 lg:px-12">
 
-        <div class="contact_info grid gap-y-4  lg:justify-items-start">
+        <div class="contact_info grid gap-y-4 lg:justify-items-start">
           <div>
-            <h3 class="contact_title text-center"> E-mail</h3>
-            <address class="contact_address font-medium font-body text-center lg:text-xl">fouzanmuhammedkv@gmail.com
+            <h3 class="contact_title text-center text-2xl md:text-xl lg:text-3xl"> E-mail</h3>
+            <address class="contact_address break-all text-center font-body text-base font-medium sm:text-lg lg:text-xl">fouzanmuhammedkv@gmail.com
             </address>
           </div>
           <div class="text-center lg:pl-20">
-            <h3 class="contact_title text-center ">Location</h3>
-            <address class="contact_address font-medium font-body lg:text-xl">Perinthalmanna</address>
+            <h3 class="contact_title text-center text-2xl md:text-xl lg:text-3xl">Location</h3>
+            <address class="contact_address font-body text-base font-medium sm:text-lg lg:text-xl">Perinthalmanna</address>
           </div>
         </div>
 
         <div class="contact_social">
-          <h3 class="contact_title text-center">Social Media</h3>
+          <h3 class="contact_title text-center text-2xl md:text-xl lg:text-3xl">Social Media</h3>
 
           <div
-            class="contact_links grid grid-cols-[max-content] justify-center gap-y-1 *:hover:translate-x-2 *:hover:text-text lg:text-xl">
-            <a href="www.linkedin.com/in/fouzan-mhd" target="_blank"
+            class="contact_links grid grid-cols-[max-content] justify-center gap-y-2 text-base *:hover:translate-x-2 *:hover:text-text sm:text-lg lg:text-xl">
+            <a href="https://www.linkedin.com/in/fouzan-mhd" target="_blank"
               class="contact_link font-medium flex justify-between items-center gap-y-2">
-              linkedin<i class="ri-arrow-right-up-long-line text-xl"></i>
+              LinkedIn<i class="ri-arrow-right-up-long-line text-xl"></i>
             </a>
 
             <a href="https://github.com/Fouzzan" target="_blank"
@@ -620,13 +619,13 @@
           </div>
         </div>
 
-        <div class="contact_write lg:justify-self-end lg:mr-20">
-          <h3 class="contact_title text-center">Write Me</h3>
+        <div class="contact_write lg:mr-20 lg:justify-self-end">
+          <h3 class="contact_title text-center text-2xl md:text-xl lg:text-3xl">Write Me</h3>
 
 
 
           <div
-            class="contact_links grid grid-cols-[max-content] justify-center gap-y-1 *:hover:translate-x-2 *:hover:text-text lg:text-xl">
+            class="contact_links grid grid-cols-[max-content] justify-center gap-y-2 text-base *:hover:translate-x-2 *:hover:text-text sm:text-lg lg:text-xl">
 
             <a href="tel:+919778263326" target="_blank"
               class="contact_link font-medium flex justify-between items-center gap-y-2">
@@ -634,7 +633,7 @@
             </a>
             <a href="https://wa.me/919778263326" target="_blank"
               class="contact_link font-medium flex justify-between items-center gap-y-2 ">
-              Whatsapp<i class="ri-arrow-right-up-long-line txt-xl"></i>
+              WhatsApp<i class="ri-arrow-right-up-long-line text-xl"></i>
             </a>
             <a href="https://www.instagram.com/fouzzan_?igsh=Mmh3NzN2MWhzcDU3" target="_blank"
               class="contact_link font-medium flex justify-between items-center gap-y-2">
@@ -649,10 +648,10 @@
   </main>
 
   <!--==================== FOOTER ====================-->
-  <footer class="footer grid relative pt-16 pb-4 text-center gap-y-4 overflow-hidden">
+  <footer class="footer relative grid gap-y-4 overflow-hidden px-4 pb-4 pt-16 text-center">
 
     <div
-      class=" absolute w-30 h-30 right-40 -bottom-3 blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob">
+      class="absolute -bottom-3 right-8 h-30 w-30 blur-3xl bg-gradient-to-b from-primary-alt to-primary-light animate-blob sm:right-40">
     </div>
 
     <div class="footer_copy text-title font-body">
@@ -663,12 +662,6 @@
     </div>
 
   </footer>
-
-  <!--=============== SCROLLREVEAL ===============-->
-  <script src="assets/js/scrollreveal.min.js"></script>
-
-  <!--=============== ANIME JS ===============-->
-  <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
 
   <!-- <h1 id="h1" class="text-title text-3xl font-bold underline font-body">
     Portfolio Website

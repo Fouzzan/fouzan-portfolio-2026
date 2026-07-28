@@ -14,7 +14,7 @@
     --color-text: hsl(240 8% 70%);
 
     --color-body: hsl(240 40% 8%);
-    --color-container: hsl(240 24% 12%)
+    --color-container: hsl(240 24% 12%);
 
 
 
@@ -151,4 +151,3 @@
 .work_button.work_active{
   color: var(--color-primary);
 }
-

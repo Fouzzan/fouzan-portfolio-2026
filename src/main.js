@@ -2,11 +2,7 @@ import './style.css'
 import './swiper-bundle.min.css'
 import swiperScriptUrl from './JS/swiper-bundle.min.js?url'
 
-/*=============== HOME SPLIT TEXT ===============*/
-
-
 /*=============== SWIPER PROJECTS ===============*/
-
 const loadSwiper = () => {
   if (window.Swiper) return Promise.resolve(window.Swiper)
 
@@ -19,138 +15,140 @@ const loadSwiper = () => {
   })
 }
 
-loadSwiper().then((Swiper) => {
-  new Swiper('.projects_swiper', {
-    loop: true,
-    spaceBetween: 24,
-    slidesPerView: 'auto',
-    grabCursor: true,
-    speed: 600,
+const projectsSwiper = document.querySelector('.projects_swiper')
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+if (projectsSwiper) {
+  loadSwiper()
+    .then((Swiper) => {
+      new Swiper('.projects_swiper', {
+        loop: true,
+        spaceBetween: 24,
+        slidesPerView: 'auto',
+        grabCursor: true,
+        speed: 600,
 
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
 
-    }
-  })
-})
-
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      })
+    })
+    .catch((error) => console.error(error))
+}
 
 /*=============== WORK TABS ===============*/
- 
-const tabs = document.querySelectorAll('[data-target]'),
-tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll('[data-target]')
+const tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach((tab) => {
-
-  tab.addEventListener('click',() => {
-    const targetSelector = tab.dataset.target,
-    targetContent = document.querySelector(targetSelector)
+  tab.addEventListener('click', () => {
+    const targetSelector = tab.dataset.target
+    const targetContent = targetSelector ? document.querySelector(targetSelector) : null
 
     if (!targetContent) return
 
     tabContents.forEach((content) => content.classList.remove('work_active'))
-    tabs.forEach((t) => t.classList.remove('work_active'))
+    tabs.forEach((item) => item.classList.remove('work_active'))
 
     tab.classList.add('work_active')
     targetContent.classList.add('work_active')
   })
-});
-
-
-/*=============== SERVICES ACCORDION ===============*/
-
-
-/*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
-
+})
 
 /*=============== COPY EMAIL IN CONTACT ===============*/
-const copyBtn = document.getElementById('contact_button'),
-copyEmail = document.getElementById('contact_email').textContent
+const copyBtn = document.getElementById('contact_button')
+const copyEmailElement = document.getElementById('contact_email')
+const copyEmail = copyEmailElement?.textContent?.trim()
+const initialCopyLabel = 'Copy E-mail <i class="ri-file-copy-line"></i>'
 
-copyBtn.addEventListener('click', () => {
-  navigator.clipboard.writeText(copyEmail).then(() => {
-    copyBtn.innerHTML = 'Email copied <i class="ri-check-line"></i>'
+if (copyBtn && copyEmail) {
+  copyBtn.addEventListener('click', () => {
+    const writeEmail = navigator.clipboard?.writeText
+      ? navigator.clipboard.writeText(copyEmail)
+      : Promise.reject(new Error('Clipboard API is unavailable'))
 
-    setTimeout(() => {
-      copyBtn.innerHTML = 'Copy E-mail <i class="ri-file-copy-line"></i>'
-    } , 2000)
+    writeEmail
+      .then(() => {
+        copyBtn.innerHTML = 'Email copied <i class="ri-check-line"></i>'
+
+        setTimeout(() => {
+          copyBtn.innerHTML = initialCopyLabel
+        }, 2000)
+      })
+      .catch(() => {
+        copyBtn.innerHTML = 'Copy failed <i class="ri-error-warning-line"></i>'
+
+        setTimeout(() => {
+          copyBtn.innerHTML = initialCopyLabel
+        }, 2000)
+      })
   })
-})
-/*=============== CURRENT YEAR OF THE FOOTER ===============*/ 
+}
 
+/*=============== CURRENT YEAR OF THE FOOTER ===============*/
+const footerYear = document.getElementById('footer-year')
+
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear().toString()
+}
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-const sections = document.querySelectorAll('section[id]');
+const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () => {
   const scrollY = window.scrollY
-  sections.forEach(section => {
-    const id = section.id,
-    top = section.offsetTop - 50,
-    height = section.offsetHeight,
-    link = document.querySelector('#nav-menu a[href*=' + id + ']')
-    if(!link) return
 
-    link.classList.toggle('active-link' , scrollY > top && scrollY <= top + height)
+  sections.forEach((section) => {
+    const { id } = section
+    const top = section.offsetTop - 80
+    const height = section.offsetHeight
+    const link = document.querySelector(`#nav-menu a[href="#${id}"]`)
+
+    if (!link) return
+
+    link.classList.toggle('active-link', scrollY > top && scrollY <= top + height)
   })
 }
-window.addEventListener('scroll', scrollActive)
 
+if (sections.length) {
+  window.addEventListener('scroll', scrollActive)
+  scrollActive()
+}
 
 /*=============== CUSTOM CURSOR ===============*/
+const cursor = document.querySelector('.cursor')
 
+if (cursor) {
+  let mouseX = 0
+  let mouseY = 0
 
-const cursor = document.querySelector('.cursor');
-let mouseX = 0, mouseY = 0;
+  const cursorMove = () => {
+    cursor.style.left = `${mouseX}px`
+    cursor.style.top = `${mouseY}px`
+    cursor.style.transform = 'translate(-50%, -50%)'
 
-const cursorMove = () => {
-  cursor.style.left = `${mouseX}px`
-  cursor.style.top = `${mouseY}px`
-  cursor.style.transform = "translate(-50%, -50%)"
-  
+    requestAnimationFrame(cursorMove)
+  }
 
-  requestAnimationFrame(cursorMove)
+  document.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX
+    mouseY = event.clientY
+  })
+
+  cursorMove()
+
+  document.querySelectorAll('a, button').forEach((item) => {
+    item.addEventListener('mouseover', () => {
+      cursor.classList.add('hide-cursor')
+    })
+
+    item.addEventListener('mouseleave', () => {
+      cursor.classList.remove('hide-cursor')
+    })
+  })
 }
-
-document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX  
-  mouseY = e.clientY
-})
-
-cursorMove()
-
-const a = document.querySelectorAll('a');
-
-a.forEach(item => {
-  item.addEventListener('mouseover', () => {
-    cursor.classList.add('hide-cursor')
-  })
-  item.addEventListener('mouseleave' , () => {
-    cursor.classList.remove('hide-cursor')
-  })
-})
-
-const button = document.querySelectorAll('button');
-button.forEach(item => {
-  item.addEventListener('mouseover', () => {
-    cursor.classList.add('hide-cursor')
-  })
-  item.addEventListener('mouseleave' , () => {
-    cursor.classList.remove('hide-cursor')
-  })
-})
-
-
-
-
-/* Hide custom cursor on links */
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
